@@ -14,6 +14,7 @@
       sinal = prompt("Sinal errado, tenta de novo.");
     }
     console.log(`Sinal: ${sinal}`);
+
     let segundoNumero = parseInt(prompt(`Segundo número:`));
     console.log(`Segundo número: ${segundoNumero}`);
 
@@ -30,7 +31,14 @@
     } else if (sinal == "r") {
       resultadoFinal = Math.sqrt(primeiroNumero);
     }
-
+    document.write(`
+Primeiro número: ${primeiroNumero} 
+<br/>
+Sinal: ${sinal}
+<br/>
+Segundo número: ${segundoNumero}
+<br/>
+Resultado: ${resultadoFinal}`);
     console.log(`
     ------------------------------
     Resultado Final: ${resultadoFinal}`);
